@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    {% load static %}
+    <link rel= "stylesheet" href= "{% static 'etemplatess.css' %}">
+    <script src="{% static 'animations.js' %}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body>
+    {% load static %}
+    <div class= MediaPlayer>
+        <center>
+            <div id= 'title' style= "font-size: x-small;"> {{title}}</div>
+            <div artist id= 'artist' style= "font-size: x-small;">{{artist}}</div> 
+            <img id="previous" src= "{% static 'previous.png' %}" alt='{{s_page}}' style= "width:26px;height:auto;"></a>
+            <a onclick="togglePlay()"><img src="{% static 'play.png' %}" data="{% static 'stop.png'%}" data2= "{% static 'play.png' %}" style="width: 25px;height: auto;" id='play' onclick="changeImage()"/></a>
+            <a><img id="next" src="{% static 'next.png' %}" alt='{{s_page}}' style= "width:30px;height:auto;"></a>
+            <audio id= 'media' src= '{{audio}}' class="media" style="width: 100%;">
+             <source id= 'go' >
+            </audio>
+            </center>
+    </div>    
