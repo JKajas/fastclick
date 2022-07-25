@@ -1,5 +1,5 @@
 # fastclick
-Simple audio player made in Django with Ajax
+:headphones: Simple audio player made in Django with Ajax :headphones:
 ## General info
 The idea behind this project was to write a simple and easy to use audio player that would change songs without refreshing the page. 
 And this is it
